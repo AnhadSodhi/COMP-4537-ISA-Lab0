@@ -1,0 +1,5 @@
+export const NUM_PROMPT = "How many buttons to create?"
+export const BUTTON_TEXT = "Go!"
+export const WIN_MESSAGE = "Excellent memory!"
+export const LOSE_MESSAGE = "Wrong order!"
+export const INVALID_INPUT = "Input must be a number between 3 and 7"

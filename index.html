@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Memory Game</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        <!-- text of p and button populated via script -->
+        <p id="num-prompt"></p>
+        <input type="text" id="input-num">
+        <button type="button" id="go-button"></button>
+
+        <div id="buttons-container"></div>
+        
+        <script type="module" src="./js/script.js"></script>
+        <script type="module" src="./js/gameController.js"></script>
+        <script type="module" src="./js/button.js"></script>
+        <script type="module" src="./js/uiManager.js"></script>
+
+        <script type="module" src="./lang/messages/en/user.js"></script>
+    </body>
+
+</html>
