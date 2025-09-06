@@ -89,16 +89,16 @@ export class GameController {
             return; // ignore clicks during scrambling
         }
 
-        if (this.expectedOrder === btn.order) {
+        if (this.expectedOrder === btn.order) { // correct guess
             btn.showOrder();
             this.expectedOrder++;
-            if (this.expectedOrder > this.buttonArray.length) {
+            if (this.expectedOrder > this.buttonArray.length) { // all correct guesses
                 UIManager.displayWinMsg();
                 this.gameInProgress = false;
                 this.clickable = false;
             }
         }
-        else {
+        else { // incorrect guess
             UIManager.displayLoseMsg();
             this.showOrders();
             this.gameInProgress = false;
